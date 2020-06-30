@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+    <title>Document</title>
+</head>
+<style>
+    h1 {
+        color: dodgerblue;
+    }
+
+    #interface {
+        z-index: -2;
+        position: absolute;
+    }
+
+    #logo {
+        z-index: -1;
+
+
+    }
+
+    #introducao {
+        border: 2px solid #222;
+        background-color: rgb(56, 51, 51);
+        position: absolute;
+        font-family: "arial";
+        top: 8%;
+        left: 15%;
+        z-index: -2;
+        margin: auto;
+        width: 70%;
+        height: 0 auto;
+        text-align: center;
+    }
+
+
+    p {
+        color: white;
+        text-align: justify;
+        padding-bottom: 1%;
+
+    }
+</style>
+
+<body>
+
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="telaprincipal.html">Início</a></li>
+
+
+
+            <li><a href="utilizando.html">Utilizando</a>
+                <ul>
+                    <li><a href="#">Árvore de decisões</a></li>
+                </ul>
+
+            </li>
+
+            <li><a href="#">Arquivo Arff</a>
+                <ul>
+                    <li><a href="comousar.html#arquivoarff">Abrindo arquivos Arff</a></li>
+                    <li><a href="comousar.html#criandoarquivoarff">Criando arquivos Arff</a></li>
+
+                </ul>
+            </li>
+
+            <li><a href="#">Download</a>
+                <ul>
+                    <li><a href="instalacao.html">Como Instalar</a></li>
+
+                </ul>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <div id=introducao>
+
+
+        <div id=arquivoarff>
+
+            <b>
+
+                <h1 style="color: rgb(0, 0, 0);">Utilizando o Weka</h1>
+                <br><br>
+
+                <p style="color: rgb(82, 127, 248); font-size: 20px; text-align: center;">Abrindo e visualizando
+                    arquivos Arff:</p>
+
+                <p style="color: rgb(82, 127, 248); font-size: 15px; font-family: arial;">1º:</p>
+                <p>Para vizualizar os dados do arquivo Arff (Attribute-Relation File Format) escolhemos a opção de
+                    explorer.
+                </p><br>
+                <img src="Interface Weka.png" alt="Weka Download" style="width:55%" height="30%"
+                    style="position: relative;"><br><br>
+
+
+                <p style="color: rgb(82, 127, 248); font-size: 15px; font-family: arial;">2º:</p>
+                <p>Ao clicar em Explorer, a página principal do Weka será aberta.</p><br>
+                <img src="Explorer Weka.png" alt="Weka Download" style="width:70%" height="50%"
+                    style="position: relative;"><br><br>
+
+
+                <p style="color: rgb(82, 127, 248); font-size: 15px; font-family: arial;">3º:</p>
+                <p>Na aba de opções, selecione a opção "Open File" e procure pelo arquivo Arff.</p><br>
+                <img src="Escolhendo File Weka.png" alt="Weka Download" style="width:70%" height="50%"
+                    style="position: relative;"><br><br>
+
+
+                <p style="color: rgb(82, 127, 248); font-size: 15px; font-family: arial;">4º:</p>
+                <p>Ao escolher o arquivo desejado, os dados serão mostrados junto com um gráfico.</p><br>
+                <img src="Resultado Weka.png" alt="Weka Download" style="width:70%" height="50%"
+                    style="position: relative;"><br><br>
+
+        </div>
+
+        <br>
+
+        <div id=criandoarquivoarff>
+            <p style="color: rgb(82, 127, 248); font-size: 20px;">Criando um Arquivo Arff:</p>
+            <p><b>Agora que você entendeu como funciona a interface do Weka, e como abrir visualizar os dados do
+                    arquivo,
+                    vamos criar seu primeiro arquivo Arff, para isso é
+                    necessário
+                    um editor de texto puro, e não se preocupe, seu computador já tem um, o bloco de notas padrão, então
+                    não
+                    será necessário baixar nenhum outro programa para isso. Logo abaixo temos a relação vista
+                    anteriormente.</b>
+            </p>
+            <br>
+            <img src="Tabelinha.png" alt="Weka Download" style="width:50%" height="20%"
+                style="position: relative;"><br><br>
+
+            <p><b></b>Agora iremos passar essa relação para Arff. Abra seu bloco de notas e utilize os seguintes
+                comandos:</p>
+            <br>
+            <img src="Arquivo Weka.png" alt="Weka Download" style="width:50%" height="20%"
+                style="position: relative;"><br></td><br><br>
+
+            <p style="color: rgb(82, 127, 248); font-size: 15px;">@relation:</p>
+            <p> Esse comando é responsável por criar uma relação com o nome desejado.</p>
+            <p style="color: rgb(82, 127, 248); font-size: 15px;">@attribute:</p>
+            <p> Cria um atributo com um nome especifico e com as possibilidades de valores que pode ser preenchido,
+                como por exemplo no atributo “Tempo”, pode ser usado os valores “Ensolarado”, “Nublado” ou “Chuva”.</p>
+            <p style="color: rgb(82, 127, 248); font-size: 15px;">@data:</p>
+            <p> Aqui é onde nós inserimos os valores na relação, como por exemplo na primeira linha: “Ensolarado,
+                Descoberta, Sim”, aqui nós estamos dizendo que o primeiro valor está com um tempo ensolarado, possuí uma
+                quadra
+                descoberta e que pode acontecer o jogo de futebol, preste bem atenção ao digitar os dados, seguindo a
+                ordem de atributos e não adicionando valores a mais.
+                Após isso, você vai em “Salvar como” e digite o nome desejado e logo em seguida .arff, e está pronto
+                para ser
+                utilizado seu arquivo arff.</p> </b>
+        </div>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

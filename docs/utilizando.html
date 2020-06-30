@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #utilizando {
+        border: 2px solid #222;
+        background-color: rgb(56, 51, 51);
+        position: absolute;
+        font-family: "arial";
+        top: 8%;
+        left: 15%;
+        z-index: -2;
+        margin: auto;
+        width: 70%;
+        height: 0 auto;
+        text-align: center
+    }
+
+    p {
+        color: white;
+        text-align: justify;
+        padding-bottom: 1%;
+
+    }
+</style>
+
+
+
+
+<body>
+
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+
+    <nav class="menu">
+        <ul>
+
+            <li><a href="telaprincipal.html">Início</a></li>
+
+            <li><a href="utilizando.html">Utilizando</a>
+                <ul>
+                    <li><a href="#">Árvore de decisões</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Arquivo Arff</a>
+                <ul>
+                    <li><a href="comousar.html#arquivoarff">Abrindo arquivos Arff</a></li>
+                    <li><a href="comousar.html#criandoarquivoarff">Criando arquivos Arff</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Download</a>
+                <ul>
+                    <li><a href="instalacao.html">Como Instalar</a></li>
+                </ul>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+
+    <div id=utilizando>
+        <img src="https://cdn0.iconfinder.com/data/icons/data-analytics-orchid-vol-1/256/Decision_Tree-512.png"
+            height="40%" width="40%">
+        <b>
+            <p style="color: rgb(82, 127, 248); font-size: 20px;">O que é árvore de decisão:</p>
+            <p>
+                Uma árvore de decisão é uma ferramenta que auxilia uma pessoa ou grupo, a tomarem decisões a partir de
+                suas ramificações e consequências. É bastante útil na orientação de discussões e guiar o grupo para
+                encontrar uma solução de um problema, ou ajudar a elaborar um plano de ação.
+                A árvore de decisão precisa ter um inicio e fim, mesmo que seja finalizado com possibilidades
+                diferentes, não podendo deixar resultados em aberto.</p>
+            <br>
+
+            <p style="color: rgb(82, 127, 248); font-size: 20px;">Onde isso se encaixa em Machine Learning?:</p>
+            <p>
+                Uma árvore de decisão por si só não é aprendizado de máquina, já que é possível criar uma sem a
+                utilização de um computador, com o objetivo de organizar melhor alguma ideia e tomar uma decisão, como
+                por exemplo, uma empresa que está planejando a campanha de Marketing de um produto, os funcionários
+                podem montar uma árvore de decisão pra decidir a estrátegia para a campanha, e chegar ao resultado mais
+                benéfico para a empresa.
+                <br>Na área do aprendizado de máquina, o computador constrói uma árvore de decisão a partir de dados
+                fornecidos pelo usuario, onde é realizado um desses dois tipos de métodos:
+
+
+
+            </p>
+            <br>
+            <p style="color: rgb(82, 127, 248); font-size: 15px;">Método Supervisionado:</p>
+            <p>
+                No método supervisionado, a análise é realizada com base em informações já fornecidas pelo usuário, o
+                método supervisionado é dividido em duas subcategorias, regressão e classificação.
+            </p>
+            <p style="color: rgb(60, 199, 241); font-size: 15px;">classificação:</p>
+            <p>Nessa subcategoria de aprendizado supervisionado, é recebido uma entrada e a caracteriza de acordo com
+                algum rótulo pré-definido. Normalmente usados quando a classificação é simples, podendo ser "Sim" ou
+                "Não".</p>
+
+            <p style="color: rgb(60, 199,241); font-size: 15px;">Regressão:</p>
+            <p>Assim como a classificação, regressão também recebe uma entrada, mas diferente da outra subcategoria,
+                essa é utilizado para responder perguntas do tipo "Quanto custa?" ou "Quantos existem?".
+            </p>
+            <br>
+            <p style="color: rgb(82, 127, 248); font-size: 15px;">Método Não Supervisionado:</p>
+            <p>
+                Já no método não supervisionado, não há informações pré-definidas, o objetivo é encontrar
+                características parecidas entre os dados fornecidos e os agrupar de acordo com elas.
+            </p>
+            <br><br>
+            <p style="color: rgb(82, 127, 248); font-size: 20px;">Visualizando árvores de decisão:</p>
+            <p></p>
+            <br>
+        </b>
+
+        <p style="color: rgb(82, 127, 248); font-size: 15px; font-family: arial;">1º:</p>
+        <p>Ao abrir a página inicial do Weka, selecione a aba classify.</p>
+        <img src="classfify.png" alt="Weka Download" style="width:85%" height="85%" style="position: relative;">
+        <br><br>
+
+        <p style="color: rgb(82, 127, 248); font-size: 15px; font-family: arial;">2º:</p>
+        <p>Na aba classifier, selecione a pasta tree e J48.</p>
+        <img src="escolhendoj48.png" alt="Weka Download" style="width:85%" height="85%" style="position: relative;">
+        <br><br>
+
+        <p style="color: rgb(82, 127, 248); font-size: 15px; font-family: arial;">3º:</p>
+        <p>Após isso, dados serão exibidos.</p>
+        <img src="j48resultado.png" alt="Weka Download" style="width:85%" height="85%" style="position: relative;">
+        <br><br>
+
+        <p style="color: rgb(82, 127, 248); font-size: 15px; font-family: arial;">4º:</p>
+        <p>Para visualizar a árvore de decisão, clice com o botão direito no arquivo desejado, na aba Result List, localizado no canto inferior esquerdo.</p>
+        <img src="visualizartree.png" alt="Weka Download" style="width:85%" height="85%" style="position: relative;">
+        <br><br>
+
+        <p style="color: rgb(82, 127, 248); font-size: 15px; font-family: arial;">5º:</p>
+        <p>Assim, a árvore de decisão será exibida.</p>
+        <img src="arvore.png" alt="Weka Download" style="width:85%" height="85%" style="position: relative;">
+        <br><br>
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
