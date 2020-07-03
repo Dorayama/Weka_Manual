@@ -20,7 +20,7 @@
         margin: auto;
         width: 70%;
         height: 0 auto;
-        text-align: center
+        text-align: center;
     }
 
     p {
@@ -44,16 +44,11 @@
 
             <li><a href="index.html">Início</a></li>
 
-            <li><a href="utilizando.html">Utilizando</a>
+            <li><a href="#">Como Usar</a>
                 <ul>
-                    <li><a href="utilizando.html">Árvore de decisões</a></li>
-                </ul>
-            </li>
+                    <li><a href="utilizando.html">Árvore de decisão</a></li>
+                    <li><a href="comousar.html">Arquivo Arff e Csv</a></li>
 
-            <li><a href="comousar.html">Arquivo Arff</a>
-                <ul>
-                    <li><a href="comousar.html#arquivoarff">Abrindo arquivos Arff</a></li>
-                    <li><a href="comousar.html#criandoarquivoarff">Criando arquivos Arff</a></li>
                 </ul>
             </li>
 
@@ -81,8 +76,23 @@
                 encontrar uma solução de um problema, ou ajudar a elaborar um plano de ação.
                 A árvore de decisão precisa ter um inicio e fim, mesmo que seja finalizado com possibilidades
                 diferentes, não podendo deixar resultados em aberto.</p>
-            <br>
+            
 
+            </p>
+            <br>
+            <p style="color: rgb(82, 127, 248); font-size: 20px;">Estrutura de uma Árvore de decisão:</p><br>
+            <img src="https://web.tecnico.ulisboa.pt/ana.freitas/bioinformatics.ath.cx/bioinformatics.ath.cx/uploads/RTEmagicC_arv_dec4_01.gif.gif"
+                height="60%" width="60%">
+
+            <br> <br>
+            <p>
+                A estrutura de uma árvore de decisão é constituída por nós, começando por nó inicial, conhecido como
+                Raiz, que se divide
+                entre outros, cada nó representa uma opção que pode ser escolhida, podendo levar a outra opção ou um
+                resultado final.
+            </p>
+
+            <br> <br>
             <p style="color: rgb(82, 127, 248); font-size: 20px;">Onde isso se encaixa em Machine Learning?:</p>
             <p>
                 Uma árvore de decisão por si só não é aprendizado de máquina, já que é possível criar uma sem a
@@ -93,23 +103,20 @@
                 <br>Na área do aprendizado de máquina, o computador constrói uma árvore de decisão a partir de dados
                 fornecidos pelo usuario, onde é realizado um desses dois tipos de métodos:
 
-
-
-            </p>
-            <br>
+                <br></p>
             <p style="color: rgb(82, 127, 248); font-size: 15px;">Método Supervisionado:</p>
             <p>
                 No método supervisionado, a análise é realizada com base em informações já fornecidas pelo usuário, o
                 método supervisionado é dividido em duas subcategorias, regressão e classificação.
             </p>
-            <p style="color: rgb(60, 199, 241); font-size: 15px;">classificação:</p>
+            <p style="color: rgb(60, 199, 241); font-size: 15px;">Classificação:</p>
             <p>Nessa subcategoria de aprendizado supervisionado, é recebido uma entrada e a caracteriza de acordo com
                 algum rótulo pré-definido. Normalmente usados quando a classificação é simples, podendo ser "Sim" ou
                 "Não".</p>
 
             <p style="color: rgb(60, 199,241); font-size: 15px;">Regressão:</p>
             <p>Assim como a classificação, regressão também recebe uma entrada, mas diferente da outra subcategoria,
-                essa é utilizado para responder perguntas do tipo "Quanto custa?" ou "Quantos existem?".
+                essa é utilizado para responder perguntas mais específicas, como por exemplo "Quanto custa?" ou "Quantos existem?".
             </p>
             <br>
             <p style="color: rgb(82, 127, 248); font-size: 15px;">Método Não Supervisionado:</p>
@@ -118,8 +125,32 @@
                 características parecidas entre os dados fornecidos e os agrupar de acordo com elas.
             </p>
             <br><br>
+
+
+            <p style="color: rgb(82, 127, 248); font-size: 20px;">Suporte e Confiança:</p>
+            <img src="Confiaça_E_Suporte.png" alt="Weka Download" style="width:50%" height="50%" style="position: relative;">
+            <br><br>
+            <p>
+                A tabela que está logo acima, representa um mercado com seus devidos produtos, e 10 clientes que
+                visitaram esse mercado para fazer compras, o Suporte, é o cálculo de quantas vezes um item apareceu
+                sobre a base, como por exemplo, o produto Café, de 10 pessoas que compraram no mercado, 3 delas levaram
+                café, então o Suporte dele é de 30%, pois de todas as compras realizadas pelos clientes, foi calculado
+                que 30% delas tinham café como um dos produtos adquirido.
+            </p>
+<br>
+            <img src="PaoManteigaCafeLeite.png" alt="Weka Download" style="width:50%" height="50%" style="position: relative;">
+            <br><br>
+            <p>
+                Já no valor de Confiança, é calculado quantas vezes um produto é comprado em conjunto com outro, o caso mais
+                evidente é dos produtos pão e manteiga, onde foi registrado que sempre que um cliente compra pão, ele também
+                leva manteiga, mas obviamente não é todo mundo que compra os mesmos produtos sempre, como no caso dos produtos
+                café e leite, 3 clientes compraram esses 2 produtos, mas apenas em 1 comprou os dois ao mesmo tempo, nesse caso
+                o valor de Confiança calcula que a cada 2 pessoas que compram café ou leite, 1 delas leva os dois. 
+            </p>
+            <br><br>
+
             <p style="color: rgb(82, 127, 248); font-size: 20px;">Visualizando árvores de decisão:</p>
-            <p></p>
+            
             <br>
         </b>
 
